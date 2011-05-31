@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32267BF013948CA50015D104 /* libCSLayoutManagers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32896A941393C14F004CECEF /* libCSLayoutManagers.a */; };
+		323CC4751393C086005E7F4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323CC4741393C086005E7F4E /* UIKit.framework */; };
+		323CC4771393C086005E7F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323CC4761393C086005E7F4E /* Foundation.framework */; };
+		323CC4791393C086005E7F4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323CC4781393C086005E7F4E /* CoreGraphics.framework */; };
+		32896ABF1393C251004CECEF /* CSLayoutManagersAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AB01393C251004CECEF /* CSLayoutManagersAppDelegate.m */; };
+		32896AC01393C251004CECEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32896AB11393C251004CECEF /* InfoPlist.strings */; };
+		32896AC11393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AB51393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.m */; };
+		32896AC21393C251004CECEF /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32896AB61393C251004CECEF /* MainWindow_iPad.xib */; };
+		32896AC31393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896ABA1393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.m */; };
+		32896AC41393C251004CECEF /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32896ABB1393C251004CECEF /* MainWindow_iPhone.xib */; };
+		32896AC51393C251004CECEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896ABD1393C251004CECEF /* main.m */; };
+		32896AD51393C2F1004CECEF /* CSFlowLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACA1393C2F1004CECEF /* CSFlowLayoutManager.h */; };
+		32896AD61393C2F1004CECEF /* CSFlowLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896ACB1393C2F1004CECEF /* CSFlowLayoutManager.m */; };
+		32896AD71393C2F1004CECEF /* CSLayoutableWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */; };
+		32896AD81393C2F1004CECEF /* CSVerticalLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */; };
+		32896AD91393C2F1004CECEF /* CSVerticalLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */; };
+		32896ADA1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */; };
+		32896ADB1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */; };
+		32896ADC1393C2F1004CECEF /* UILabel(CSLayoutableWidget).h in Headers */ = {isa = PBXBuildFile; fileRef = 32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */; };
+		32896ADD1393C2F1004CECEF /* UILabel(CSLayoutableWidget).m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AD21393C2F1004CECEF /* UILabel(CSLayoutableWidget).m */; };
+		32896ADE1393C2F1004CECEF /* UITextField(CSLayoutableWidget).h in Headers */ = {isa = PBXBuildFile; fileRef = 32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */; };
+		32896ADF1393C2F1004CECEF /* UITextField(CSLayoutableWidget).m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32896AC71393C26E004CECEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323CC4671393C086005E7F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32896A931393C14F004CECEF;
+			remoteInfo = CSLayoutManagers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		323CC4701393C086005E7F4E /* CSLayoutManagersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSLayoutManagersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323CC4741393C086005E7F4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		323CC4761393C086005E7F4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		323CC4781393C086005E7F4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32896A941393C14F004CECEF /* libCSLayoutManagers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSLayoutManagers.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		32896AAD1393C251004CECEF /* CSLayoutManagersDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CSLayoutManagersDemo-Info.plist"; sourceTree = "<group>"; };
+		32896AAE1393C251004CECEF /* CSLayoutManagersDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CSLayoutManagersDemo-Prefix.pch"; sourceTree = "<group>"; };
+		32896AAF1393C251004CECEF /* CSLayoutManagersAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayoutManagersAppDelegate.h; sourceTree = "<group>"; };
+		32896AB01393C251004CECEF /* CSLayoutManagersAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLayoutManagersAppDelegate.m; sourceTree = "<group>"; };
+		32896AB21393C251004CECEF /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32896AB41393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayoutManagersAppDelegate_iPad.h; sourceTree = "<group>"; };
+		32896AB51393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLayoutManagersAppDelegate_iPad.m; sourceTree = "<group>"; };
+		32896AB71393C251004CECEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		32896AB91393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayoutManagersAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		32896ABA1393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLayoutManagersAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		32896ABC1393C251004CECEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		32896ABD1393C251004CECEF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32896ACA1393C2F1004CECEF /* CSFlowLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFlowLayoutManager.h; sourceTree = "<group>"; };
+		32896ACB1393C2F1004CECEF /* CSFlowLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFlowLayoutManager.m; sourceTree = "<group>"; };
+		32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayoutableWidget.h; sourceTree = "<group>"; };
+		32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVerticalLayoutManager.h; sourceTree = "<group>"; };
+		32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVerticalLayoutManager.m; sourceTree = "<group>"; };
+		32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView(CSLayoutableWidget).h"; sourceTree = "<group>"; };
+		32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView(CSLayoutableWidget).m"; sourceTree = "<group>"; };
+		32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel(CSLayoutableWidget).h"; sourceTree = "<group>"; };
+		32896AD21393C2F1004CECEF /* UILabel(CSLayoutableWidget).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel(CSLayoutableWidget).m"; sourceTree = "<group>"; };
+		32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField(CSLayoutableWidget).h"; sourceTree = "<group>"; };
+		32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField(CSLayoutableWidget).m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323CC46D1393C086005E7F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32267BF013948CA50015D104 /* libCSLayoutManagers.a in Frameworks */,
+				323CC4751393C086005E7F4E /* UIKit.framework in Frameworks */,
+				323CC4771393C086005E7F4E /* Foundation.framework in Frameworks */,
+				323CC4791393C086005E7F4E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32896A921393C14F004CECEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323CC4651393C086005E7F4E = {
+			isa = PBXGroup;
+			children = (
+				32896A941393C14F004CECEF /* libCSLayoutManagers.a */,
+				32896AC91393C288004CECEF /* CSLayoutManagers */,
+				32896AAC1393C251004CECEF /* CSLayoutManagersDemo */,
+				323CC4731393C086005E7F4E /* Frameworks */,
+				323CC4711393C086005E7F4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		323CC4711393C086005E7F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323CC4701393C086005E7F4E /* CSLayoutManagersDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323CC4731393C086005E7F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323CC4741393C086005E7F4E /* UIKit.framework */,
+				323CC4761393C086005E7F4E /* Foundation.framework */,
+				323CC4781393C086005E7F4E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32896AAC1393C251004CECEF /* CSLayoutManagersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				32896AAD1393C251004CECEF /* CSLayoutManagersDemo-Info.plist */,
+				32896AAE1393C251004CECEF /* CSLayoutManagersDemo-Prefix.pch */,
+				32896AAF1393C251004CECEF /* CSLayoutManagersAppDelegate.h */,
+				32896AB01393C251004CECEF /* CSLayoutManagersAppDelegate.m */,
+				32896AB11393C251004CECEF /* InfoPlist.strings */,
+				32896AB31393C251004CECEF /* iPad */,
+				32896AB81393C251004CECEF /* iPhone */,
+				32896ABD1393C251004CECEF /* main.m */,
+			);
+			path = CSLayoutManagersDemo;
+			sourceTree = "<group>";
+		};
+		32896AB31393C251004CECEF /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				32896AB41393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.h */,
+				32896AB51393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.m */,
+				32896AB61393C251004CECEF /* MainWindow_iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		32896AB81393C251004CECEF /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				32896AB91393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.h */,
+				32896ABA1393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.m */,
+				32896ABB1393C251004CECEF /* MainWindow_iPhone.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		32896AC91393C288004CECEF /* CSLayoutManagers */ = {
+			isa = PBXGroup;
+			children = (
+				32896ACA1393C2F1004CECEF /* CSFlowLayoutManager.h */,
+				32896ACB1393C2F1004CECEF /* CSFlowLayoutManager.m */,
+				32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */,
+				32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */,
+				32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */,
+				32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */,
+				32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */,
+				32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */,
+				32896AD21393C2F1004CECEF /* UILabel(CSLayoutableWidget).m */,
+				32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */,
+				32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */,
+			);
+			path = CSLayoutManagers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32896A901393C14F004CECEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32896AD51393C2F1004CECEF /* CSFlowLayoutManager.h in Headers */,
+				32896AD71393C2F1004CECEF /* CSLayoutableWidget.h in Headers */,
+				32896AD81393C2F1004CECEF /* CSVerticalLayoutManager.h in Headers */,
+				32896ADA1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h in Headers */,
+				32896ADC1393C2F1004CECEF /* UILabel(CSLayoutableWidget).h in Headers */,
+				32896ADE1393C2F1004CECEF /* UITextField(CSLayoutableWidget).h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		323CC46F1393C086005E7F4E /* CSLayoutManagersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323CC4961393C086005E7F4E /* Build configuration list for PBXNativeTarget "CSLayoutManagersDemo" */;
+			buildPhases = (
+				323CC46C1393C086005E7F4E /* Sources */,
+				323CC46D1393C086005E7F4E /* Frameworks */,
+				323CC46E1393C086005E7F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32896AC81393C26E004CECEF /* PBXTargetDependency */,
+			);
+			name = CSLayoutManagersDemo;
+			productName = CSLayoutManagers;
+			productReference = 323CC4701393C086005E7F4E /* CSLayoutManagersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32896A931393C14F004CECEF /* CSLayoutManagers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32896A971393C198004CECEF /* Build configuration list for PBXNativeTarget "CSLayoutManagers" */;
+			buildPhases = (
+				32896A901393C14F004CECEF /* Headers */,
+				32896A911393C14F004CECEF /* Sources */,
+				32896A921393C14F004CECEF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSLayoutManagers;
+			productName = CSLayoutManagersLib;
+			productReference = 32896A941393C14F004CECEF /* libCSLayoutManagers.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323CC4671393C086005E7F4E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 323CC46A1393C086005E7F4E /* Build configuration list for PBXProject "CSLayoutManagers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 323CC4651393C086005E7F4E;
+			productRefGroup = 323CC4711393C086005E7F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32896A931393C14F004CECEF /* CSLayoutManagers */,
+				323CC46F1393C086005E7F4E /* CSLayoutManagersDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323CC46E1393C086005E7F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32896AC01393C251004CECEF /* InfoPlist.strings in Resources */,
+				32896AC21393C251004CECEF /* MainWindow_iPad.xib in Resources */,
+				32896AC41393C251004CECEF /* MainWindow_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323CC46C1393C086005E7F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32896ABF1393C251004CECEF /* CSLayoutManagersAppDelegate.m in Sources */,
+				32896AC11393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.m in Sources */,
+				32896AC31393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.m in Sources */,
+				32896AC51393C251004CECEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32896A911393C14F004CECEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32896AD61393C2F1004CECEF /* CSFlowLayoutManager.m in Sources */,
+				32896AD91393C2F1004CECEF /* CSVerticalLayoutManager.m in Sources */,
+				32896ADB1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m in Sources */,
+				32896ADD1393C2F1004CECEF /* UILabel(CSLayoutableWidget).m in Sources */,
+				32896ADF1393C2F1004CECEF /* UITextField(CSLayoutableWidget).m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32896AC81393C26E004CECEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32896A931393C14F004CECEF /* CSLayoutManagers */;
+			targetProxy = 32896AC71393C26E004CECEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32896AB11393C251004CECEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32896AB21393C251004CECEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32896AB61393C251004CECEF /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32896AB71393C251004CECEF /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		32896ABB1393C251004CECEF /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32896ABC1393C251004CECEF /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323CC4941393C086005E7F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		323CC4951393C086005E7F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		323CC4971393C086005E7F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSLayoutManagersDemo/CSLayoutManagersDemo-Prefix.pch";
+				INFOPLIST_FILE = "CSLayoutManagersDemo/CSLayoutManagersDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		323CC4981393C086005E7F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSLayoutManagers/CSLayoutManagers-Prefix.pch";
+				INFOPLIST_FILE = "CSLayoutManagersDemo/CSLayoutManagersDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		32896A951393C150004CECEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = CSLayoutManagers;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32896A961393C150004CECEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = CSLayoutManagersLib;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323CC46A1393C086005E7F4E /* Build configuration list for PBXProject "CSLayoutManagers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323CC4941393C086005E7F4E /* Debug */,
+				323CC4951393C086005E7F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323CC4961393C086005E7F4E /* Build configuration list for PBXNativeTarget "CSLayoutManagersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323CC4971393C086005E7F4E /* Debug */,
+				323CC4981393C086005E7F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32896A971393C198004CECEF /* Build configuration list for PBXNativeTarget "CSLayoutManagers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32896A951393C150004CECEF /* Debug */,
+				32896A961393C150004CECEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 323CC4671393C086005E7F4E /* Project object */;
+}

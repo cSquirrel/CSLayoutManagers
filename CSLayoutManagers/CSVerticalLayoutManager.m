@@ -117,19 +117,19 @@
 	return result;
 }
 
--(CGSize)getPreferredSize:(UIView*)aView withMaxSize:(CGSize)maxSize {
-	CGSize result;
-//	BOOL conformsToTheProtocol=[aView conformsToProtocol:NSProtocolFromString(@"CSLayoutableWidget")];
-	BOOL respondsToSelector=[aView respondsToSelector:@selector(preferredSize)];
-	if(respondsToSelector){
-		aView.frame=CGRectMake(0, 0, maxSize.width, maxSize.height);
-		id<CSLayoutableWidget> layoutableWidget=(id<CSLayoutableWidget>)aView;
-		result=[layoutableWidget preferredSize];
-	} else {
-		result=aView.frame.size;
-	}
-	return result;
-}
+//-(CGSize)getPreferredSize:(UIView*)aView withMaxSize:(CGSize)maxSize {
+//	CGSize result;
+////	BOOL conformsToTheProtocol=[aView conformsToProtocol:NSProtocolFromString(@"CSLayoutableWidget")];
+//	BOOL respondsToSelector=[aView respondsToSelector:@selector(preferredSize)];
+//	if(respondsToSelector){
+//		aView.frame=CGRectMake(0, 0, maxSize.width, maxSize.height);
+//		id<CSLayoutableWidget> layoutableWidget=(id<CSLayoutableWidget>)aView;
+//		result=[layoutableWidget preferredSize];
+//	} else {
+//		result=aView.frame.size;
+//	}
+//	return result;
+//}
 
 #pragma mark -
 #pragma mark Vertical align
@@ -151,7 +151,7 @@
 #warning TODO review the code; Get rid of CSLayoutableWidget
 	// calculate total height for all widgets
 	CGFloat totalHeight=0;
-	for (id<CSLayoutableWidget> subview in [self visibleSubviews]) {
+	for (UIView *subview in [self visibleSubviews]) {
 		CGSize preferredSize=[subview preferredSize];
 		totalHeight+=preferredSize.height+spacing.height;
 	}
@@ -167,7 +167,7 @@
 	// if the offset is not 'integer' the the displayed character are fuzzy 
 	// (iphone tries to mimic 'double' position
 	CGFloat verticalOffset=floor((viewHeight-totalHeight)/2+padding.top);
-	for (id<CSLayoutableWidget> subview in [self visibleSubviews]) {
+	for (UIView *subview in [self visibleSubviews]) {
 		CGSize preferredSize=[subview preferredSize];
 		CGRect subviewFrame=CGRectMake(0, verticalOffset, preferredSize.width, preferredSize.height);
 		[subview setFrame:subviewFrame];
@@ -182,7 +182,7 @@
 #warning TODO review the code; Get rid of CSLayoutableWidget
 	// calculate total height for all widgets
 	CGFloat totalHeight=0;
-	for (id<CSLayoutableWidget> subview in [self visibleSubviews]) {
+	for (UIView *subview in [self visibleSubviews]) {
 		CGSize preferredSize=[subview preferredSize];
 		totalHeight+=preferredSize.height+spacing.height;
 	}
@@ -194,7 +194,7 @@
 	
 	// align the widgets
 	CGFloat verticalOffset=_view.frame.size.height-totalHeight-padding.bottom;
-	for (id<CSLayoutableWidget> subview in [self visibleSubviews]) {
+	for (UIView *subview in [self visibleSubviews]) {
 		CGSize preferredSize=[subview preferredSize];
 		[subview setFrame:CGRectMake(0, verticalOffset, preferredSize.width, preferredSize.height)];
 		[(UIView*)subview setNeedsLayout];

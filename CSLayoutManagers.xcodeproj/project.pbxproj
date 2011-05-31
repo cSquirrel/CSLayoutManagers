@@ -161,11 +161,19 @@
 		32896AC91393C288004CECEF /* CSLayoutManagers */ = {
 			isa = PBXGroup;
 			children = (
+				32C410F413949ED5001B8580 /* Deprecated */,
 				32896ACA1393C2F1004CECEF /* CSFlowLayoutManager.h */,
 				32896ACB1393C2F1004CECEF /* CSFlowLayoutManager.m */,
-				32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */,
 				32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */,
 				32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */,
+			);
+			path = CSLayoutManagers;
+			sourceTree = "<group>";
+		};
+		32C410F413949ED5001B8580 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */,
 				32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */,
 				32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */,
 				32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */,
@@ -173,7 +181,7 @@
 				32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */,
 				32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */,
 			);
-			path = CSLayoutManagers;
+			name = Deprecated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

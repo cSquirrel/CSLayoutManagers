@@ -1,38 +1,13 @@
 //
-//  VerticalLayoutManager.h
-//  TabBarApp
+//  CSVerticalLayoutManager.m
+//  CSLayoutManagers
 //
 //  Created by Marcin Maciukiewicz on 13/04/2010.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 BluePocket Ltd. All rights reserved.
 //
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
-enum {
-	CSLayoutVerticalAlignTop,
-	CSLayoutVerticalAlignMiddle,
-	CSLayoutVerticalAlignBottom
-    /*,VerticalAlignJustify // components spread evenly */
-} typedef CSLayoutVerticalAlign;
-
-enum {
-	CSLayoutHorizontalAlignLeft,
-	CSLayoutHorizontalAlignCenter,
-	CSLayoutHorizontalAlignRight
-    /*,HorizontalAlignJustify // components spread evenly */
-} typedef CSLayoutHorizontalAlign;
-
-struct {
-	CGFloat	top;
-	CGFloat	right;
-	CGFloat	bottom;
-	CGFloat	left;
-} typedef Distance;
-
-CG_INLINE Distance DistanceMake(CGFloat top, CGFloat right, CGFloat bottom, CGFloat left) {
-	Distance size; size.top = top; size.right = right; size.bottom = bottom; size.left = left; return size;
-}
-
+#include "CSLayoutManagers.h"
 
 /**
  * Layout components in vertical lign.
@@ -41,26 +16,26 @@ CG_INLINE Distance DistanceMake(CGFloat top, CGFloat right, CGFloat bottom, CGFl
 @interface CSVerticalLayoutManager : NSObject {
 	CSLayoutVerticalAlign	verticalAlign;
 	CSLayoutHorizontalAlign	horizontalAlign;
-	UIView			*_view;
+	UIView			*_superview;
 	NSMutableArray	*_subviews;
-	NSArray			*_visibleSubviews;
 	CGSize			spacing;
-	Distance		padding;
+	CSDistance		padding;
 	BOOL			ignoreHidden;
 }
 
-@property(nonatomic,retain)	UIView			*_view;
+@property(nonatomic,retain)	UIView			*_superview;
 @property(nonatomic,assign)	NSMutableArray	*_subviews;
-@property(nonatomic,assign)	NSArray			*_visibleSubviews;
 @property					CGSize			spacing;
-@property					Distance		padding;
+@property					CSDistance		padding;
 @property					CSLayoutVerticalAlign	verticalAlign;
 @property					CSLayoutHorizontalAlign	horizontalAlign;
 @property					BOOL			ignoreHidden;
 
--(id)initWithView:(UIView*)view;
--(void)addSubview:(UIView*)subview;
--(CGSize)layoutSubviews;
--(NSArray*)allSubviews;
+-(id)init;
+-(id)initWithSuperview:(UIView*)view;
+-(void)addView:(UIView*)subview;
+-(void)addViews:(NSArray*/*UIView*/)subviews;
+-(CGSize)layoutViews;
+-(NSArray*)allViews;
 
 @end

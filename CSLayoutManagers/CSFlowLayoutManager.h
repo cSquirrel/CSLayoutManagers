@@ -7,25 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CSLayoutableWidget.h"
+#import "CSLayoutManagers.h"
 
 /**
  * Layout component as the go - one after another.
  */
 @interface CSFlowLayoutManager : NSObject {
-	UIView			*_view;
+	UIView			*_superview;
 	NSMutableArray	*_subviews;
 	CGSize			spacing;
-	CGSize			padding;
+	CSDistance			padding;
+    BOOL			ignoreHidden;
 }
 
-@property(nonatomic,retain)	UIView			*_view;
+@property(nonatomic,retain)	UIView			*_superview;
 @property(nonatomic,assign)	NSMutableArray	*_subviews;
 @property					CGSize			spacing;
-@property					CGSize			padding;
+@property					CSDistance			padding;
+@property					BOOL			ignoreHidden;
 
--(id)initWithView:(UIView*)view;
--(void)addSubview:(id<CSLayoutableWidget>)subview;
--(void)layoutSubviews;
+-(id)initWithSuperview:(UIView*)view;
+-(void)addView:(UIView*)subview;
+-(void)layoutViews;
 
 @end

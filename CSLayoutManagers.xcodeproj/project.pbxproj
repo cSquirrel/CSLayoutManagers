@@ -23,12 +23,11 @@
 		32896AD71393C2F1004CECEF /* CSLayoutableWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */; };
 		32896AD81393C2F1004CECEF /* CSVerticalLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */; };
 		32896AD91393C2F1004CECEF /* CSVerticalLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */; };
-		32896ADA1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h in Headers */ = {isa = PBXBuildFile; fileRef = 32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */; };
-		32896ADB1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */; };
-		32896ADC1393C2F1004CECEF /* UILabel(CSLayoutableWidget).h in Headers */ = {isa = PBXBuildFile; fileRef = 32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */; };
-		32896ADD1393C2F1004CECEF /* UILabel(CSLayoutableWidget).m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AD21393C2F1004CECEF /* UILabel(CSLayoutableWidget).m */; };
-		32896ADE1393C2F1004CECEF /* UITextField(CSLayoutableWidget).h in Headers */ = {isa = PBXBuildFile; fileRef = 32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */; };
-		32896ADF1393C2F1004CECEF /* UITextField(CSLayoutableWidget).m in Sources */ = {isa = PBXBuildFile; fileRef = 32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */; };
+		32C410FB1395F087001B8580 /* CSLayoutManagers.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C410FA1395F087001B8580 /* CSLayoutManagers.h */; };
+		32C410FF1395FB91001B8580 /* FlowLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C410FD1395FB91001B8580 /* FlowLayoutDemoViewController.m */; };
+		32C411001395FB91001B8580 /* FlowLayoutDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C410FE1395FB91001B8580 /* FlowLayoutDemoViewController.xib */; };
+		32C411041395FBAD001B8580 /* VerticalLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C411021395FBAD001B8580 /* VerticalLayoutDemoViewController.m */; };
+		32C411051395FBAD001B8580 /* VerticalLayoutDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C411031395FBAD001B8580 /* VerticalLayoutDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +63,13 @@
 		32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayoutableWidget.h; sourceTree = "<group>"; };
 		32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVerticalLayoutManager.h; sourceTree = "<group>"; };
 		32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVerticalLayoutManager.m; sourceTree = "<group>"; };
-		32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView(CSLayoutableWidget).h"; sourceTree = "<group>"; };
-		32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView(CSLayoutableWidget).m"; sourceTree = "<group>"; };
-		32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel(CSLayoutableWidget).h"; sourceTree = "<group>"; };
-		32896AD21393C2F1004CECEF /* UILabel(CSLayoutableWidget).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel(CSLayoutableWidget).m"; sourceTree = "<group>"; };
-		32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField(CSLayoutableWidget).h"; sourceTree = "<group>"; };
-		32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField(CSLayoutableWidget).m"; sourceTree = "<group>"; };
+		32C410FA1395F087001B8580 /* CSLayoutManagers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayoutManagers.h; sourceTree = "<group>"; };
+		32C410FC1395FB91001B8580 /* FlowLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutDemoViewController.h; sourceTree = "<group>"; };
+		32C410FD1395FB91001B8580 /* FlowLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutDemoViewController.m; sourceTree = "<group>"; };
+		32C410FE1395FB91001B8580 /* FlowLayoutDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowLayoutDemoViewController.xib; sourceTree = "<group>"; };
+		32C411011395FBAD001B8580 /* VerticalLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalLayoutDemoViewController.h; sourceTree = "<group>"; };
+		32C411021395FBAD001B8580 /* VerticalLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalLayoutDemoViewController.m; sourceTree = "<group>"; };
+		32C411031395FBAD001B8580 /* VerticalLayoutDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalLayoutDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +126,7 @@
 		32896AAC1393C251004CECEF /* CSLayoutManagersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				32C411061395FBB4001B8580 /* Layout Demo Views */,
 				32896AAD1393C251004CECEF /* CSLayoutManagersDemo-Info.plist */,
 				32896AAE1393C251004CECEF /* CSLayoutManagersDemo-Prefix.pch */,
 				32896AAF1393C251004CECEF /* CSLayoutManagersAppDelegate.h */,
@@ -162,10 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				32C410F413949ED5001B8580 /* Deprecated */,
-				32896ACA1393C2F1004CECEF /* CSFlowLayoutManager.h */,
-				32896ACB1393C2F1004CECEF /* CSFlowLayoutManager.m */,
+				32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */,
 				32896ACD1393C2F1004CECEF /* CSVerticalLayoutManager.h */,
 				32896ACE1393C2F1004CECEF /* CSVerticalLayoutManager.m */,
+				32C410FA1395F087001B8580 /* CSLayoutManagers.h */,
 			);
 			path = CSLayoutManagers;
 			sourceTree = "<group>";
@@ -173,15 +174,23 @@
 		32C410F413949ED5001B8580 /* Deprecated */ = {
 			isa = PBXGroup;
 			children = (
-				32896ACC1393C2F1004CECEF /* CSLayoutableWidget.h */,
-				32896ACF1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h */,
-				32896AD01393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m */,
-				32896AD11393C2F1004CECEF /* UILabel(CSLayoutableWidget).h */,
-				32896AD21393C2F1004CECEF /* UILabel(CSLayoutableWidget).m */,
-				32896AD31393C2F1004CECEF /* UITextField(CSLayoutableWidget).h */,
-				32896AD41393C2F1004CECEF /* UITextField(CSLayoutableWidget).m */,
+				32896ACA1393C2F1004CECEF /* CSFlowLayoutManager.h */,
+				32896ACB1393C2F1004CECEF /* CSFlowLayoutManager.m */,
 			);
 			name = Deprecated;
+			sourceTree = "<group>";
+		};
+		32C411061395FBB4001B8580 /* Layout Demo Views */ = {
+			isa = PBXGroup;
+			children = (
+				32C410FC1395FB91001B8580 /* FlowLayoutDemoViewController.h */,
+				32C410FD1395FB91001B8580 /* FlowLayoutDemoViewController.m */,
+				32C410FE1395FB91001B8580 /* FlowLayoutDemoViewController.xib */,
+				32C411011395FBAD001B8580 /* VerticalLayoutDemoViewController.h */,
+				32C411021395FBAD001B8580 /* VerticalLayoutDemoViewController.m */,
+				32C411031395FBAD001B8580 /* VerticalLayoutDemoViewController.xib */,
+			);
+			name = "Layout Demo Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +203,7 @@
 				32896AD51393C2F1004CECEF /* CSFlowLayoutManager.h in Headers */,
 				32896AD71393C2F1004CECEF /* CSLayoutableWidget.h in Headers */,
 				32896AD81393C2F1004CECEF /* CSVerticalLayoutManager.h in Headers */,
-				32896ADA1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).h in Headers */,
-				32896ADC1393C2F1004CECEF /* UILabel(CSLayoutableWidget).h in Headers */,
-				32896ADE1393C2F1004CECEF /* UITextField(CSLayoutableWidget).h in Headers */,
+				32C410FB1395F087001B8580 /* CSLayoutManagers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,8 @@
 				32896AC01393C251004CECEF /* InfoPlist.strings in Resources */,
 				32896AC21393C251004CECEF /* MainWindow_iPad.xib in Resources */,
 				32896AC41393C251004CECEF /* MainWindow_iPhone.xib in Resources */,
+				32C411001395FB91001B8580 /* FlowLayoutDemoViewController.xib in Resources */,
+				32C411051395FBAD001B8580 /* VerticalLayoutDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +292,8 @@
 				32896AC11393C251004CECEF /* CSLayoutManagersAppDelegate_iPad.m in Sources */,
 				32896AC31393C251004CECEF /* CSLayoutManagersAppDelegate_iPhone.m in Sources */,
 				32896AC51393C251004CECEF /* main.m in Sources */,
+				32C410FF1395FB91001B8580 /* FlowLayoutDemoViewController.m in Sources */,
+				32C411041395FBAD001B8580 /* VerticalLayoutDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +303,6 @@
 			files = (
 				32896AD61393C2F1004CECEF /* CSFlowLayoutManager.m in Sources */,
 				32896AD91393C2F1004CECEF /* CSVerticalLayoutManager.m in Sources */,
-				32896ADB1393C2F1004CECEF /* UIImageView(CSLayoutableWidget).m in Sources */,
-				32896ADD1393C2F1004CECEF /* UILabel(CSLayoutableWidget).m in Sources */,
-				32896ADF1393C2F1004CECEF /* UITextField(CSLayoutableWidget).m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

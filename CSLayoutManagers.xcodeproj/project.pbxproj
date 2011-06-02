@@ -28,6 +28,7 @@
 		32C411001395FB91001B8580 /* FlowLayoutDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C410FE1395FB91001B8580 /* FlowLayoutDemoViewController.xib */; };
 		32C411041395FBAD001B8580 /* VerticalLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C411021395FBAD001B8580 /* VerticalLayoutDemoViewController.m */; };
 		32C411051395FBAD001B8580 /* VerticalLayoutDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C411031395FBAD001B8580 /* VerticalLayoutDemoViewController.xib */; };
+		32EEDC89139720A700091755 /* LayoutDemoSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EEDC88139720A700091755 /* LayoutDemoSelector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		32C411011395FBAD001B8580 /* VerticalLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalLayoutDemoViewController.h; sourceTree = "<group>"; };
 		32C411021395FBAD001B8580 /* VerticalLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalLayoutDemoViewController.m; sourceTree = "<group>"; };
 		32C411031395FBAD001B8580 /* VerticalLayoutDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalLayoutDemoViewController.xib; sourceTree = "<group>"; };
+		32EEDC87139720A700091755 /* LayoutDemoSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutDemoSelector.h; sourceTree = "<group>"; };
+		32EEDC88139720A700091755 /* LayoutDemoSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutDemoSelector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				32896AAE1393C251004CECEF /* CSLayoutManagersDemo-Prefix.pch */,
 				32896AAF1393C251004CECEF /* CSLayoutManagersAppDelegate.h */,
 				32896AB01393C251004CECEF /* CSLayoutManagersAppDelegate.m */,
+				32EEDC87139720A700091755 /* LayoutDemoSelector.h */,
+				32EEDC88139720A700091755 /* LayoutDemoSelector.m */,
 				32896AB11393C251004CECEF /* InfoPlist.strings */,
 				32896AB31393C251004CECEF /* iPad */,
 				32896AB81393C251004CECEF /* iPhone */,
@@ -294,6 +299,7 @@
 				32896AC51393C251004CECEF /* main.m in Sources */,
 				32C410FF1395FB91001B8580 /* FlowLayoutDemoViewController.m in Sources */,
 				32C411041395FBAD001B8580 /* VerticalLayoutDemoViewController.m in Sources */,
+				32EEDC89139720A700091755 /* LayoutDemoSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

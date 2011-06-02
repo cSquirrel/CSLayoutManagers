@@ -8,26 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CSLayoutManagers.h"
+#import "LayoutDemoSelector.h"
 
 @interface CSLayoutManagersAppDelegate : NSObject <UIApplicationDelegate> {
-    CSFlowLayoutManager *_layoutManager;
+    UINavigationController *_navigationController;
 }
 
-@property (nonatomic, retain)   IBOutlet    UIWindow            *window;
-@property (nonatomic,retain)    IBOutlet    UISegmentedControl  *verticalAlignment;
-@property (nonatomic,retain)    IBOutlet    UISegmentedControl  *horizontalAlignment;
-
-@property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview1;
-@property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview2;
-@property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview3;
-@property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview4;
-
-
-@property (nonatomic,retain)    CSFlowLayoutManager *_layoutManager;
-
--(IBAction)doVerticalAlignmentHasChanged:(id)sender;
--(IBAction)doHorizontalAlignmentHasChanged:(id)sender;
--(IBAction)doShowHide:(id)sender;
--(IBAction)doChangeSpacing:(id)sender;
+@property (nonatomic, retain)   IBOutlet    UIWindow                *window;
+@property (nonatomic, retain)               UINavigationController  *_navigationController;
 
 @end

@@ -11,94 +11,14 @@
 @implementation CSLayoutManagersAppDelegate
 
 @synthesize window=_window;
-@synthesize verticalAlignment=_verticalAlignment;
-@synthesize horizontalAlignment=_horizontalAlignment;
-@synthesize exampleSubview1=_exampleSubview1;
-@synthesize exampleSubview2=_exampleSubview2;
-@synthesize exampleSubview3=_exampleSubview3;
-@synthesize exampleSubview4=_exampleSubview4;
-
-@synthesize _layoutManager;
+@synthesize _navigationController;
 
 - (void)dealloc
 {
     [_window release];
+    [_navigationController release];
+    
     [super dealloc];
-}
-
-#pragma -
-//-(IBAction)doVerticalAlignmentHasChanged:(id)sender {
-//    UISegmentedControl *control=(UISegmentedControl*)sender;
-//    
-//    switch(control.selectedSegmentIndex) {
-//        case 0: {
-//            // top
-//            _layoutManager.verticalAlign=CSLayoutVerticalAlignTop;
-//        } break;
-//        case 1: {
-//            _layoutManager.verticalAlign=CSLayoutVerticalAlignMiddle;
-//            // middle
-//        } break;
-//        case 2: {
-//            _layoutManager.verticalAlign=CSLayoutVerticalAlignBottom;
-//            // bottom
-//        } break;
-//        case 3: {
-//            // justify
-//#warning TODO Vertical alignment: justify            
-////            _layoutManager.verticalAlign=VerticalAlignJustify;
-//        } break;
-//    }
-//    
-//    [UIView beginAnimations:@"LayoutViews" context:nil];
-//    [_layoutManager layoutViews];
-//    [UIView commitAnimations];
-//}
-//
-//-(IBAction)doHorizontalAlignmentHasChanged:(id)sender {
-//    UISegmentedControl *control=(UISegmentedControl*)sender;   
-//    
-//    switch(control.selectedSegmentIndex) {
-//        case 0: {
-//            // left
-//            _layoutManager.horizontalAlign=CSLayoutHorizontalAlignLeft;
-//        } break;
-//        case 1: {
-//            // center
-//            _layoutManager.horizontalAlign=CSLayoutHorizontalAlignCenter;
-//        } break;
-//        case 2: {
-//            // right
-//            _layoutManager.horizontalAlign=CSLayoutHorizontalAlignRight;
-//        } break;
-//        case 3: {
-//            // justify
-//#warning TODO Vertical alignment: justify            
-//            //            _layoutManager.verticalAlign=VerticalAlignJustify;
-//        } break;            
-//    }
-//    
-//    [UIView beginAnimations:@"LayoutViews" context:nil];
-//    [_layoutManager layoutViews];
-//    [UIView commitAnimations];
-//}
-
--(IBAction)doShowHide:(id)sender {
-    [UIView beginAnimations:@"LayoutViews" context:nil];
-    _exampleSubview2.hidden=!_exampleSubview2.hidden;
-    [_layoutManager layoutViews];
-    [UIView commitAnimations];
-}
-
--(IBAction)doChangeSpacing:(id)sender {
-    [UIView beginAnimations:@"LayoutViews" context:nil];
-    if(_layoutManager.spacing.width==10) {
-        _layoutManager.spacing=CGSizeMake(20, 20);
-    } else {
-        _layoutManager.spacing=CGSizeMake(10, 10);
-    }
-    [_layoutManager layoutViews];
-    [UIView commitAnimations];
 }
 
 #pragma -
@@ -106,20 +26,10 @@
 {
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
-    
-//    self._layoutManager=[[CSVerticalLayoutManager alloc] initWithSuperview:_exampleSubview1.superview];
-    self._layoutManager=[[CSFlowLayoutManager alloc] init];
-    
-    [_layoutManager addView:_exampleSubview1];
-    [_layoutManager addView:_exampleSubview2];
-    [_layoutManager addView:_exampleSubview3];
-    [_layoutManager addView:_exampleSubview4];
-    
-//    _layoutManager.verticalAlign=CSLayoutVerticalAlignTop;
-//    _layoutManager.horizontalAlign=CSLayoutHorizontalAlignLeft;
-    _layoutManager.padding=CSDistanceMake(10, 10, 10, 10);
-    _layoutManager.spacing=CGSizeMake(10, 10);
-    [_layoutManager layoutViews];
+
+    LayoutDemoSelector *demoSelector=[[[LayoutDemoSelector alloc] init] autorelease];
+    self._navigationController=[[UINavigationController alloc] initWithRootViewController:demoSelector];
+    [self.window addSubview:_navigationController.view];
     
     return YES;
 }

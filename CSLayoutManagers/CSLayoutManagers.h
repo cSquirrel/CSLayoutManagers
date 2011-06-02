@@ -35,5 +35,5 @@ CG_INLINE CSDistance CSDistanceMake(CGFloat top, CGFloat right, CGFloat bottom, 
 #define CGDistanceZero CSDistanceMake(0, 0, 0, 0)
 
 #import "CSLayoutableWidget.h"
-#include "CSVerticalLayoutManager.h"
-#include "CSFlowLayoutManager.h"
+#import "CSVerticalLayoutManager.h"
+#import "CSFlowLayoutManager.h"

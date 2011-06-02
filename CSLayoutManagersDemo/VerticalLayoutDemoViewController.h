@@ -7,21 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#include "CSLayoutManagers.h"
+#import "CSLayoutManagers.h"
 
 @interface VerticalLayoutDemoViewController : UIViewController {
     CSVerticalLayoutManager *_layoutManager;
 }
 
-@property (nonatomic,retain)    IBOutlet    UISegmentedControl  *verticalAlignment;
-@property (nonatomic,retain)    IBOutlet    UISegmentedControl  *horizontalAlignment;
+//@property (nonatomic,retain)    IBOutlet    UISegmentedControl  *verticalAlignment;
+//@property (nonatomic,retain)    IBOutlet    UISegmentedControl  *horizontalAlignment;
 
 @property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview1;
 @property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview2;
 @property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview3;
 @property (nonatomic,retain)    IBOutlet    UIView              *exampleSubview4;
 
-@property (nonatomic,retain)    CSVerticalLayoutManager *_layoutManager;
+@property (nonatomic,assign)    CSVerticalLayoutManager *_layoutManager;
 
 -(IBAction)doVerticalAlignmentHasChanged:(id)sender;
 -(IBAction)doHorizontalAlignmentHasChanged:(id)sender;

@@ -11,6 +11,14 @@
 
 @implementation VerticalLayoutDemoViewController
 
+//@synthesize verticalAlignment=_verticalAlignment;
+//@synthesize horizontalAlignment=_horizontalAlignment;
+@synthesize exampleSubview1=_exampleSubview1;
+@synthesize exampleSubview2=_exampleSubview2;
+@synthesize exampleSubview3=_exampleSubview3;
+@synthesize exampleSubview4=_exampleSubview4;
+@synthesize _layoutManager;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -69,12 +77,7 @@
         case 2: {
             // right
             _layoutManager.horizontalAlign=CSLayoutHorizontalAlignRight;
-        } break;
-        case 3: {
-            // justify
-#warning TODO Vertical alignment: justify            
-            //            _layoutManager.verticalAlign=VerticalAlignJustify;
-        } break;            
+        } break;           
     }
     
     [UIView beginAnimations:@"LayoutViews" context:nil];
@@ -112,8 +115,18 @@
 
 - (void)viewDidLoad
 {
+    self.title=@"Vertical Layout";
+    
+    _layoutManager=[[CSVerticalLayoutManager alloc] init];
+    [_layoutManager addView:_exampleSubview1];
+    [_layoutManager addView:_exampleSubview2];
+    [_layoutManager addView:_exampleSubview3];
+    [_layoutManager addView:_exampleSubview4];
+    _layoutManager.spacing=CGSizeMake(5, 5);
+    _layoutManager.padding=CSDistanceMake(10, 10, 20, 10);
+    [_layoutManager layoutViews];
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
